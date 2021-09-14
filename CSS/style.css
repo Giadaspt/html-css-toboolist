@@ -43,12 +43,12 @@ header {
   margin-top: 56px;
   margin-left: auto;
   margin-right: auto;
-  
+  border-radius: 5px 5px 0 0 ;
 }
 
 .button-one,.button-two{
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: none;
 }
 
@@ -65,8 +65,122 @@ header {
   border: 2px solid lightgrey;
 }
 
+/* list section */
 .big-square {
+  box-sizing: border-box;
   background-color: white;
-  height: 400px;
+  height: 650px;
   margin-top: 5px;
+  padding: 48px 0 48px 48px;
 }
+
+.big-square .text-list {
+  margin-bottom: 24px;
+}
+
+.list-name {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.list, .list2{
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+
+.list-name::before {
+  content: '\25BC';
+  vertical-align: middle;
+}
+
+/* check icons*/
+.list::before {
+  content: '\02713';
+  display: inline-block;
+  color: green; 
+  text-align: center;
+  height: 16px;
+  width: 16px;
+  line-height: 16px; 
+  border: 1.5px solid green;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.list2::before {
+  content: '\0292C';
+  display: inline-block; 
+  text-align: center;
+  color: red;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  border: 1.5px solid red;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* colored part at the end of the list text*/
+.list .blue {
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(69,171,234);
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
+.list .violet {
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(156,114,228);
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
+.list2 .green {
+  content: '\0292C',
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(100,192,169);
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
+.list .orange {
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(242,158,51);
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
+.list .pink {
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(218,106,165);
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
+.list .green-grass{
+  box-sizing: border-box;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  background-color: rgb(176,201,38)
+  ;
+  padding: 5px 8px; 
+  border-radius: 8px;
+}
+
